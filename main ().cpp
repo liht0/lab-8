@@ -2,16 +2,17 @@
 #include <string.h>
 #include <stdlib.h>
 
-typedef struct human{
+typedef struct human {
 	char name[20];
 	char fname[30];
 	int year;
-};
+	int N;
+} human;
 
-void sortyear(struct human h, int N){
+void sortyear(human, int N){
 	int i, j;
 	for (i = 0; i < N-1; i++){
-		for (j=0; j<N-i; j++){
+		for (j = 0; j < N-i; j++){
 			if (h[j].year>h[j+1].year){
 				temp = h[j];
 				h[j] = h[j+1];
@@ -60,10 +61,8 @@ int main() {
 			}
 		}
 		
-		
-	
 	free(h1);
 	free(h2);
 	fclose(in);
 	return 0;
-}
+}	

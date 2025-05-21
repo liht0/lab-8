@@ -7,7 +7,6 @@ typedef struct human {
 	int year;
 	int N;	
 } human;
-
 void sortyear(human *h, int N){
 	int i, j;
 	human temp;

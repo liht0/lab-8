@@ -34,6 +34,7 @@ void sortfname(human *h, int N){
 	}
 }
 void sortname(human *h, int N){
+
 	
 	int i, j;
 	human temp;
